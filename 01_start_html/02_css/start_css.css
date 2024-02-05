@@ -1,0 +1,41 @@
+/* import 방식 css 파일에서 다른 css 파일 불렁 옴*/
+
+@imprort url("./start_css.css");
+
+li {
+  color: blueviolet;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  color: green;
+}
+p {
+  color:orange
+  margin:blue
+}
+
+p{
+  background-color:aqua;
+  color:orange
+
+}
+*{
+  color:red;
+
+}
+ .orange{
+  background-color:orange
+
+
+}
+
+#li-orange {
+  background-color: orange;
+}

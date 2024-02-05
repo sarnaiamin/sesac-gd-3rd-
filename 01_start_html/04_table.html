@@ -67,45 +67,103 @@
             </tr>
         </tr>
         <br /><br /><br /><br />
-    </table>
-    
-    <h1>colspan과 rowspan (연습)</h1>
-    <table border="1" cellspacing="0" width="100%" style="text-align: center; background-color:pink"
+  
+
+    <h1 style="color: green" align="center">스타벅스 (실습)</h1>
+    <caption>
+    <table
+      border="1"
+      cellspacing="0"
+      cellpadding="10"
+      align="center"
+      style="text-align: center"
     >
+    </caption>
       <tr>
-        <td colspan="2">1</td>
-        <td nowspan="2">2</td>
-        <tr>
-            <td nowspan="2">3</td>
-            <td ></td>center</td>
-        </tr>
+        <th>구분</th>
+        <th>음료</th>
+        <th>가격</th>
+        <th>이미지</th>
+      </tr>
+      <tr>
+        <td rowspan="2">커피류</td>
+        <td>아메리카노</td>
+        <td>4,200원</td>
+        <td>
+            <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=110563"
+            target="_blank"
+            ><img src="drink1.jpg" alt="아메리카노" style="width: 200px;" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>돌체라떼</td>
+        <td>4,800원</td>
+        <td>
+            <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=128692"
+            target="_blank"
+            ><img src="drink2.jpg" alt="돌체라떼" style="width: 200px;" /></a>
+        </td>
+      </tr>
+      <td rowspan="2">주스류</td>
+        <td>자바치 프라푸치노</td>
+        <td rowspan="2">5,000원</td>
+        <td>
+            <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=168016"
+            target="_blank"
+            ><img src="drink3.jpg" alt="자바칩 프라푸치노" style="width: 200px;" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td>녹차 프라푸치노</td>
+        <td>
+            <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=9200000002502"
+            target="_blank"
+            ><img src="drink4.jpg" alt="녹차 프라푸치노" style="width: 200px;" /></a>
+        </td>
       </tr>
     </table>
 
-    <h1 style="color:green">starbucks</h1>
-    <table border="1 cellspacing=0 cellpadding="10" align="center" style="text-align: center;">
-        <h1 style="color:green">starbucks</h1>
-    </caption>
-    <tr>
-        <th>구분/th>
-        <th>가격</th>
-        <th>음료</th>
-        <th>이미지</th>
-    </tr>
-    <tr>
-        <td rowspan="=2">커피음료</td>
-        <td>이메리카노</td>
-        <td>4200</td>
-        <td>
-        <a hred="data:image/jpeg;base64,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"
-        target="_blank">
-        <img src=".img/coffee" alt="커피" />
-        </a>
-   
+
+
 
             
     </table>
        
     </tr>
   </body>
+</html>
+<br/><br/><br/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="color: bisque; align=center">스타박스 (슬십)</h1>
+  <caption>
+    <table border="1" cellspasing="0" cellpading="10" align="=center" style="text-align: center;"
+    >
+
+  </caption>
+  <tr>
+    <th>구분</th>
+    <th>가격</th>
+    <th>음료</th>
+    <th>이미지</th>
+  </tr>
+  <tr>
+    <td rowspan="2">커피료</td>
+    <td>아메리카노</td>
+    <td>4200</td>
+    <td>
+    <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=110563"
+    target="_blank"
+    >< img src="drink2.jpg" alt="돌체라떼" style="width: 200px;" /></a>
+  </td>
+    
+  </tr>
+
+</body>
 </html>

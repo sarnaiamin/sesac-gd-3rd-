@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 복합 선택자</title>
+    <style>
+        main > .second article > ul >li{
+            font-size: 10px;
+        }
+        .second > li {
+            font-size: 50px; background-color: tomato; color:white
+        }
+        header {
+            height: 70px;
+            background-color: aliceblue;
+        }
+        section {
+            border: 5px solid pink;
+        }
+        article{
+            border: 1px solid gold;
+        }
+        
+        header > h1{
+            color: violet;
+            text-align: center;
+        }
+        #sunandmoon + li{
+            font-size: 20px;
+            background-color: aqua;
+        }
+        #snowwhite ~ li{
+            background-color: blue;
+        }
+        li#snowWhite {
+
+        }
+        main section.second ul > li > ul > li, .first article span{
+            border:5px dotted red
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <head>
+        <h1>복합 선택자 연습</h1>
+    </head>
+    <main>
+        main section.second ul > li > ul > li, .first article span
+        <section class="=first"
+            <h2>첫번째 section</h2>
+            <article>
+                <span>전래동화</span>
+                <ul>
+                    <li>콩쥐팟쥐</li>
+                    <li>햇님 달님</li>
+                    <li>홍부와 놀부</li>
+                    <li>읂헤 갚은 까치</li>
+                </ul>
+            </article>
+        </section>
+        <section class="second">
+            <h2>두 번째</h2>
+            <article>
+                <span>외국 동화</span>
+                <ul>
+                    <li><신데렐라/li>
+                        <ul>
+                            <li>게묘</li>
+                            <li>신대래라</li>
+                            <li>왕자</li>
+                        </ul>
+                        <li>미녀외 야수</li>
+                        <li>알라딘</li>
+                        <li id="snowWhite">백설공주</li>
+                        <li>이상한나라의 앨리스</li>
+    
+              </ul>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .zoo > ul lion {
+        background-color: blue;
+    }
+    p lion{
+      font-size: 20px;
+        background-color: yellow;
+    }
+    .lion{
+        background-color: yellow;
+    }
+    .tiger{
+        background-color: aquamarine;
+    }
+    #tiger  + li{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <head>
+        <h1>동물원에 왓어요</h1>
+    </head>
+<main>
+    <section class="first">
+        <article>
+            <span>여긴 사파리</span>
+<ul>
+    <li id="zoo">곰</li>
+    <li id="tiger">호랑이</li>
+    <li>팬더</li>
+        <ul>
+            <li>사자1</li>
+            <li>사자1</li>
+        </ul>
+</ul>
+        </article>
+        <article>
+            <ul>
+                <li>사욕사</li>
+                <li>사욕사 레일라</li>
+            </ul>
+        </article>
+        <h1>사파리 밖에 사지</h1>
+        <article>
+            <ul>
+                <li>야생의 사자</li>
+            </ul>
+        </article>
+
+    </section>
+</main>
+</body>
+</html>
