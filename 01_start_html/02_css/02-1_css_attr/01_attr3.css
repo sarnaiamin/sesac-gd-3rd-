@@ -1,0 +1,21 @@
+.box {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  border: 1px solid #000;
+}
+.background {
+  /* background color는 백그라운드만 작성해도 스타일을 지정할 수 있음*/
+  /* 백그라운드 -> 단축속성 */
+  /* 단축속성 순서
+        color image repeat position/size */
+  background-color: aqua;
+  background: palevioletred;
+  /* 색상 앞에 to bottom, to top, to right, to left, deg 입력 시 해당 방향으로*/
+  background: linear-gradient(to left, gold, yellowgreen);
+  background: linear-gradient(to right, gold 20%, yellowgreen);
+}
+/* 배경 이미지 관련 속석 */
+.background-image {
+  background-image: url(small_img.png);
+}
