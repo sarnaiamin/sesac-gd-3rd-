@@ -1,0 +1,100 @@
+.container {
+  /* display flex 자식 요소의 정렬 방법을 지정하는 속성
+    display inline-flex는 속성도 있음
+    flexㅇ와ㅏinline flex 의 차이
+    flex은 보모 요소가 수직으로 쌓음
+    inline flex는 보모 요소가 수평으로 쌓음 inline 요소 처럼
+    display flexsㄴ 기본적으로 자식 요소들이 왼쪽에서 오른쪽으로 쌓음
+    측, 주축의 기분 방향이 좌 우
+    flex 기본 용어
+    추죽 main axis
+    교차축 cross axis 
+    flex direction row (default)
+    flex direction row reverse
+    justify content 주축 item 의 정렬 방범 배치 방범
+    justify content  flex start default 아이탬은 start 지점 기존으로 나열
+    justify content frex end 지점을 기존으로 나열
+    justify content space ariund 모든 여백을 동일하개 갖도록 함
+    justify content space evenly start 부터 첫 아이탬 간격 아이템 사이 간격
+    justify content between  처음 과 마지막 아이템 양 끜 붙이고
+
+    -align-items 교차축에 대한 item을 어떻게 배치할것
+    align-items; sretch; defualt contaier 의 교차축 모두 채우기 위해 늘림 
+    아이템의 높이 너비가 지정되지 않은을 때 자동으로 교차축을 채우기 위해 늘어남 
+    align-items flex end 교차측 끝점으로 정렬 
+    align-items items base line 아니템을 택스테에 베이스라인 기존으로 정렬
+    align-content 두 줄 이상에서 교차측 기존으로 아이템들의 정렬 방식 
+    조건: flex wrap  상태애서 아이템이 2줄 이상일때 교차측 방향 설정
+     align-content sretch 교차측 방향으로 모두 차지하기 위해늘어남
+      align-content flex start 교차측 방향으로 끝점으로 정열
+       align-content flex end 교차측 방향으로 중안 정렬
+
+
+
+
+    */
+
+  display: flex;
+  width: 100vw;
+  background-color: beige;
+  height: 300px;
+
+  width: 350px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+}
+
+.item {
+  width: 100px;
+  height: 100x;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.item1 {
+  background-color: blueviolet;
+}
+.item2 {
+  background-color: gray;
+}
+.item3 {
+  background-color: red;
+}
+.item4 {
+  background-color: pink;
+}
+.item5 {
+  background-color: orange;
+}
+
+.container2 {
+  background-color: aquamarine;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+}
+.container2.item1 {
+  background-color: azure;
+  align-self: flex-start;
+  order: 5;
+}
+.container2.item2 {
+  background-color: blueviolet;
+  order: 4;
+}
+.container2.item3 {
+  background-color: pink;
+  order: 3;
+}
+.container2.item4 {
+  background-color: green;
+  order: 2;
+}
+.container2.item5 {
+  background-color: orange;
+  flex-grow: 2;
+  order: 1;
+}
