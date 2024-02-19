@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amimation</title>
+    <style>
+      * {
+        border: 1px solid black;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        box-shadow: -5px 5px 10px inset rgba(red, green, blue, alpha);
+        animation: ball 10s;
+      }
+      @keyframes ball {
+        0% {
+          transform: tranclate(0px);
+        }
+        25% {
+          transform: translate(calc(100vw - 100px), 0px);
+        }
+        50% {
+          transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+        }
+        75% {
+          transform: translate(0, calc(100vh - 100px));
+        }
+        100% {
+          transform: translate(0px);
+        }
+      }
+
+      @keyframes slidein {
+        from {
+          margin: 100%;
+          width: 300%;
+        }
+        to {
+          margin-left: 0;
+          width: 100px;
+        }
+        h2 {
+          margin-top: calc(100vw-100px);
+        }
+      }
+
+      p {
+        animation: slidein 3s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <h2>움직이기</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum temporibus
+      eius dicta cupiditate possimus! Repellat tempore qui corporis ipsam enim
+      est quibusdam deleniti consequatur laborum mollitia, accusantium debitis
+      asperiores suscipit.
+    </p>
+  </body>
+</html>

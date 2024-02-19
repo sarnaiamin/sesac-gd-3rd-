@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaquery</title>
+    <style>
+      .body {
+        margin: 0;
+        padding: o;
+      }
+      .p {
+        background-color: green;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aqua;
+        margin: 20px;
+      }
+      @media screen and(win-width:700px) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          background-color: black;
+        }
+      }
+
+      @media screen and(min-width:500px) {
+        body {
+          background-color: orange;
+        }
+      }
+      @media screen and (min-heigth: 300px) {
+        p {
+          background-color: white;
+        }
+      }
+
+      @media screen and(min-heigth:500px) {
+        p {
+          background-color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>미디어 퀄리 실습</p>
+    <br />
+    <h2>키그에 따라</h2>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

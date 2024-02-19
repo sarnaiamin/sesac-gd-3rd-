@@ -1,0 +1,95 @@
+.img-box {
+  background-color: lightblue;
+  width: 400px;
+  height: 250px;
+}
+img {
+  width: 100%; /* -> 부모 너비가 400px 이기 대문에 400px 됨 */
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid gold;
+}
+img:hover {
+  /*
+       1. skew()
+       - 원하는 각도만큼 요소를 기울임
+       - x,y축 나누어 속성 부여 가능
+         - skewx(x_deg)
+         - skewy(y_deg)
+      - x,y축 동시에 사용 원하는 경우
+        -skew(x_deg, y_deg)
+       */
+  transform: skewX(30deg);
+  transform: skewY(30deg);
+  transform: skew(30deg, 30deg);
+  /*  */
+  transform: scaleX(2);
+  transform: scaleY(0.5);
+  /*
+  3.translate()
+  -요소들 이동
+   */
+  transform: translateX(100px);
+  transform: translateY(-100px);
+  transform: translateZ(100px);
+  transform: perspective(500px) translateZ(100px);
+}
+{
+    /*4.rotete()
+-호전
+-주어진 각도만큼 회전
+=rotete: y 축을 기존으로 회전 */
+transform: rotete(45deg)
+transform: perspective(500) roteteX(45deg)
+transform: perspective(500) roteteY(45deg)
+transform: perspective(500) roteteX(180deg)
+
+
+}
+/* transition
+변화가 일어날때 사용하는 속성
+transition: 프로퍼티 값 변경 시 인정 시간에 걸처 변화가 일어나도록 함
+transition propery 변화 대상 css 속성 지정 default all
+transition duration 변화가 일어닐 시간 단위
+transition timing function 변화 시간별 속도 지정 defaul ease
+ease 천천히 시작 빨라짐 느려짐 
+linear 속도 일정
+ease in 천천히 시작 천천히 끈남
+ease out 정상 속도 천천히 끝남
+ease in out 천천하 시작 정상 속도 */
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: orange;
+    transition: 1s;
+
+}
+.box1:hover {
+    background-color: aqua;
+    height: 120px;
+    width: 120px;
+    transition-duration:1s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    transition: backgruond color 1s ease-in 1s;
+/* 단축 속성 
+순서 중요
+transition property duration timming function delay*/
+
+}
+.box2:hover{
+    background-color:black;
+    width: 120px;
+    height: 120px;
+    transform: translateX(200px)scale(2)
+
+}
+.box3:hover{
+    background-color: black;
+    width: 120px;
+    height: 120px;
+    transform: translate();
+}
+
+
