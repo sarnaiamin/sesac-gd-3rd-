@@ -30,6 +30,15 @@ header .inner .logo {
   font-size: 50px;
   color: aliceblue;
 }
+header .inner .menu {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner .menu li {
+  margin-right: 20px;
+}
 
 .small-menu,
 .menu-bar {
@@ -39,7 +48,30 @@ header .inner .logo {
 @media screen and (max-width: 768px) {
   .small-menu,
   .menu-bar {
-    display: block;
+    display: none;
+  }
+  header .inner .logo {
+    left: calc(50%-25px);
+  }
+  header .menu-bar {
+    position: absolute;
+    font-size: 30px;
+    line-height: 100px;
+    right: 5%;
+  }
+  header .small-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  header .small-menu li {
+    background-color: aliceblue;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+  }
+  header .small-menu li:hover {
+    background-color: rgb(0, 55, 10);
+    color: white;
   }
 
   .menu {
