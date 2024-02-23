@@ -33,3 +33,31 @@ console.timeLog(letName2); //심청이 출력
 // let latname2= 심봉사 ; error; 준복 선언 불가
 letName2 = "심봉사"; //값 제할당 가능
 console.log(letName2);
+`
+`
+/* const\ 키워드
+반드시 변수 선언과 값 할당 동시에 이뤄짐
+변수 재선언 재할당*/
+const constName; //error 선언 동시애 할당필요
+console.log(constName); 
+/* 정라
+var: es6 이 전에 사용했던 변구 선언 키워드 사용 자양하자
+let; 변수 서언 키워드
+변수 선언 - 겂 불가능
+변수 재활동 가눙 (값 수정할수 았음)
+const ; 상수 선언 키워드
+상수 변하지 앟움 값
+변수 선너과 값 활동 동시에 해야함
+재선언 재활동 불가눙 
+식발자 규칙
+이름 지정할떄 사용하는 단어 (변수명 함수명 등)
+키워드 사용 불가
+키워드 특별한 역할을 이미 하고 있는 단어
+ex, var, let, const, if, function. for. return
+숫자로 시작 불가
+특수문자 $ 만 허용
+공백 문자 사용 불가
+사용 간ㅇ 한 식뱔자 
+a, name, name1. name$/ name, my_name, myname
+varm, let, const. 1st, my name, 
+*/
