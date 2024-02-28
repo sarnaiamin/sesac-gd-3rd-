@@ -1,5 +1,20 @@
 function helloWorld1() {
   //항수 정의
+  //함수
+  //특정 작엊을 수행하기 위해 독립적으로 설게된 코드 집합
+  //함수 저의 -> 함수 호출
+  //함수 정릐 / 선언
+  //key word;function
+  //name; 함수이름 (camelcase)
+  //parameter: 함수 선언 사 매개변수를 받은 것
+  //body; 함수 내부 코도 (scrope 라고도 함)
+  // 함수 정의 / 선언 방삭
+  //함수 선언문(함수 선언)
+  //function 키워드 사용
+  //function  name() {}
+  //함수 표현식
+  //-함수 이름 작성x->      변수를 만들어 함수를 저장
+  //참고 )
   console.log("helloWorl1");
 }
 //항수 실행
@@ -40,3 +55,20 @@ function hello(name) {
   alert("hello ${name}");
 }
 hello("layla");
+//과제
+//multifly
+function multifly(num1, num2) {
+  console.log("num1 :", num1);
+  console.log("num2:", num2);
+  console.log("aa"); //return
+}
+console.log(multifly(7, 3)); //21
+onsole.log(multifly(4, 10)); //40
+
+//square 함수 만즐기
+function square(num) {
+  return num ** 2;
+}
+console.log(square(4));
+
+console.clear();
