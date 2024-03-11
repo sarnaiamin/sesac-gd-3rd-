@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>게산기 만들기</h1>
+    <from>
+      <label for="value1">값1 :</label>
+      <input type="number" id="value1" />
+      <label for="value1">값2 :</label>
+      <input type="number" id="value2" />
+
+      <label for="operator">연산자 :</label>
+      <input type="number" id="operator" />
+
+      <label for="reseult">결과 :</label>
+      <input type="number" id="reseult" disabled="true" />
+
+      <button type="button" id="calc">게산하기</button>
+      <button type="button" id="reset" onclick="">초가화</button>
+    </from>
+  </body>
+  <script>
+    function calc() {
+      const v1 = Number(document.querySelector("#value1").value);
+      const v2 = Number(document.querySelector("#value2").value);
+      const op = document.querySelector("#operator").value;
+      let reseult;
+      if (op === "+") {
+        reseult = v1 + V2;
+      } else if (op === "-") {
+        reseult = v1 - v2;
+      } else if (op === "/") {
+        reseult = v1 / v2;
+      } else if (op === "*") {
+        reseult = v1 * v2;
+      } else {
+        reseult = "오류";
+      }
+      document.querySelector("#result").value = reseult;
+    }
+
+    const calcBtn = document.querySelector("calc");
+    calcBtn.addEventListener("click", calc);
+    function reset() {
+      document.querySelector("value1").value = "";
+      document.querySelector("value2").value = "";
+      document.querySelector("operator").value = "";
+      document.querySelector("#reselt").value = "";
+    }
+  </script>
+</html>
